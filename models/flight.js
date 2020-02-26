@@ -5,7 +5,7 @@ const flightSchema = new Schema ({
     flightNo : Number,
     departs : { type: Number,
     default: function() {
-        return new Date().getFullYear();
+        return new Date().getFullYear() + 1;
     }}
 });
 
